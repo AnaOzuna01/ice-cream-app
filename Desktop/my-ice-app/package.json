@@ -4,8 +4,16 @@
     "description": "Primer proyecto - ice cream app",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "start": "node src/app.js",
+        "dev": "nodemon src/app.js"
     },
     "author": "\"Ana Ozuna\"",
-    "license": "ISC"
+    "license": "ISC",
+    "devDependencies": {
+        "nodemon": "^1.19.4"
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "mongoose": "^5.7.7"
+    }
 }
