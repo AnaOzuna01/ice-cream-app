@@ -1,0 +1,38 @@
+<% include partials/header %>
+
+
+
+<div class="container">
+    <header class="jumbotron">
+        <div class="container">
+            <div class="col align-self-center">
+                <h3>Bienvenid@s</h3>
+                <h1>Proceda a crear su nueva orden</h1>
+                <p>
+                    <a href="/order/new">
+                        <button type="button" class="btn btn-warning"> Add new order </button>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <ul>
+            <% order.forEach(function(order){ %>
+            <div>
+                <li><%= order.name %></li><strong><%= order.username %></strong>
+                <div>
+                    <p><%= order.description %></p>
+                </div>
+            </div>
+
+
+            <% });  %>
+        </ul>
+
+    </div>
+
+
+    <% include partials/footer %>

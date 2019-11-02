@@ -1,20 +1,25 @@
 {
-    "name": "my-ice-app",
-    "version": "1.0.0",
-    "description": "Primer proyecto - ice cream app",
-    "main": "index.js",
-    "scripts": {
-        "start": "node src/app.js",
-        "dev": "nodemon src/app.js"
-    },
-    "author": "\"Ana Ozuna\"",
-    "license": "ISC",
-    "devDependencies": {
-        "nodemon": "^1.19.4"
-    },
-    "dependencies": {
-        "ejs": "^2.7.1",
-        "express": "^4.17.1",
-        "mongoose": "^5.7.7"
-    }
+  "name": "my-ice-app",
+  "version": "1.0.0",
+  "description": "Ice cream app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+  "author": "AnaOzuna",
+  "license": "ISC",
+
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "mongod": "^2.0.0",
+    "mongodb": "^3.3.3",
+    "mongoose": "^5.7.7",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^5.0.1"
+  }
 }
